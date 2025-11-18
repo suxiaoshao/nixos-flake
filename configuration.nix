@@ -15,7 +15,7 @@
 {
   imports = [
     # Include the results of the hardware scan.
-    ./hardware-configuration.nix
+    # ./hardware-configuration.nix
   ];
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
@@ -29,8 +29,4 @@
     "nix-command"
     "flakes"
   ];
-
-  users.users.root = {
-    extraGroups = [ "root" ];
-  };
 }

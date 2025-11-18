@@ -48,12 +48,15 @@
           inherit system;
           modules = [
             nixos-wsl.nixosModules.default
+            ./wsl.nix
             {
               system.stateVersion = "25.05";
+
               nix.settings.experimental-features = [
                 "nix-command"
                 "flakes"
               ];
+
               environment.systemPackages = with pkgs; [
                 # self
                 git
@@ -61,8 +64,10 @@
 
                 # node
                 nodejs
+                pnpm
 
                 # rust dev
+                rust-bin.stable.latest.default
                 openssl
                 openssl.dev
                 pkg-config
@@ -70,18 +75,16 @@
                 gcc
                 mold
                 postgresql
-                rust-bin.stable.latest.default
-              ];
-              # nixpkgs.overlays = [ rust-overlay.overlays.default ];
-              # devShells.${system}.default =
-              #   with pkgs;
-              #   mkShell {
-              #     packages = [
 
-              #     ];
-              #   };
+                # zed
+                nix-ld
+              ];
               environment.sessionVariables = {
-                PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+                PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig:${pkgs.postgresql.dev}/lib/pkgconfig";
+              };
+
+              programs.nix-ld = {
+                enable = true;
               };
             }
             ./configuration.nix
@@ -92,10 +95,7 @@
 
               # TODO replace ryan with your own username
               home-manager.users.nixos = import ./home.nix;
-
-              # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
             }
-            ./wsl.nix
           ];
         };
       };
