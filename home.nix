@@ -1,9 +1,15 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  username ? "nixos",
+  homeDirectory ? "/home/${username}",
+  ...
+}:
 
 {
   # TODO please change the username & home directory to your own
-  home.username = "nixos";
-  home.homeDirectory = "/home/nixos";
+  home.username = username;
+  home.homeDirectory = homeDirectory;
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
@@ -17,8 +23,10 @@
   # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
-    userName = "suxiaoshao";
-    userEmail = "48886207+suxiaoshao@users.noreply.github.com";
+    settings.user = {
+      name = "suxiaoshao";
+      email = "48886207+suxiaoshao@users.noreply.github.com";
+    };
     # safe.directory = [ "/etc/nixos" ];
   };
 
@@ -54,5 +62,5 @@
   # You can update home Manager without changing this value. See
   # the home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
 }
