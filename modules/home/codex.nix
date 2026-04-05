@@ -21,7 +21,6 @@
     prevent_idle_sleep = true
     fast_mode = false
     guardian_approval = true
-    tui_app_server = true
 
     [plugins."github@openai-curated"]
     enabled = true
