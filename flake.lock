@@ -23,16 +23,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1775077333,
-        "narHash": "sha256-OXcxobt7lBkh1B8AjwreU+24myhtKpqeLfAeIyNLFY8=",
-        "ref": "release-25.11",
-        "rev": "49ca96b2714c5931e17401eff87f3edd42d2b0f2",
-        "revCount": 5877,
+        "lastModified": 1790215976,
+        "narHash": "sha256-VkR1rMGyjU9jtw8ISFx5uqR9e+LEaOlhHwrseFkiIVk=",
+        "ref": "release-26.05",
+        "rev": "a6631107a83ceab5872f298a2ea710859c80c4cb",
+        "shallow": true,
         "type": "git",
         "url": "https://github.com/nix-community/home-manager"
       },
       "original": {
-        "ref": "release-25.11",
+        "ref": "release-26.05",
+        "shallow": true,
         "type": "git",
         "url": "https://github.com/nix-community/home-manager"
       }
@@ -45,48 +46,51 @@
         ]
       },
       "locked": {
-        "lastModified": 1773876229,
-        "narHash": "sha256-ncup+eYqHABZzBgwfQzxOXWHIcjN4kkZl9QTb4cgNm8=",
-        "ref": "release-25.11",
-        "rev": "381bc12a25d49c6b798f98ab33a8d951ec54659b",
-        "revCount": 710,
+        "lastModified": 1789157919,
+        "narHash": "sha256-3+r8UDwPkTlB9hhHoN4rjGtZow3+wEFOganBKurhJhY=",
+        "ref": "release-26.05",
+        "rev": "b98199a76ab180be55f7a6a97bd4984a87c99964",
+        "shallow": true,
         "type": "git",
-        "url": "https://github.com/nix-community/nixos-wsl"
+        "url": "https://github.com/nix-community/NixOS-WSL"
       },
       "original": {
-        "ref": "release-25.11",
+        "ref": "release-26.05",
+        "shallow": true,
         "type": "git",
-        "url": "https://github.com/nix-community/nixos-wsl"
+        "url": "https://github.com/nix-community/NixOS-WSL"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1775002709,
-        "narHash": "sha256-d3Yx83vSrN+2z/loBh4mJpyRqr9aAJqlke4TkpFmRJA=",
-        "ref": "nixos-25.11",
-        "rev": "bcd464ccd2a1a7cd09aa2f8d4ffba83b761b1d0e",
-        "revCount": 910305,
+        "lastModified": 1790340521,
+        "narHash": "sha256-cRrWlIjVRJ6BHDr9caUdXsZ3owzWIKYHpNmGPHBInIU=",
+        "ref": "nixos-26.05",
+        "rev": "f5c082a40f7571c266e74e80ae2e68aadd8a9fc7",
+        "shallow": true,
         "type": "git",
         "url": "https://github.com/NixOS/nixpkgs"
       },
       "original": {
-        "ref": "nixos-25.11",
+        "ref": "nixos-26.05",
+        "shallow": true,
         "type": "git",
         "url": "https://github.com/NixOS/nixpkgs"
       }
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1774709303,
-        "narHash": "sha256-D3Q07BbIA2KnTcSXIqqu9P586uWxN74zNoCH3h2ESHg=",
+        "lastModified": 1790323409,
+        "narHash": "sha256-VVTPf+Hyd5ebpjBMHmrLMSBIeW6ls48Bqtosj7CNKLA=",
         "ref": "nixos-unstable",
-        "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
-        "revCount": 971119,
+        "rev": "e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
+        "shallow": true,
         "type": "git",
         "url": "https://github.com/NixOS/nixpkgs"
       },
       "original": {
         "ref": "nixos-unstable",
+        "shallow": true,
         "type": "git",
         "url": "https://github.com/NixOS/nixpkgs"
       }
@@ -107,17 +111,19 @@
         ]
       },
       "locked": {
-        "lastModified": 1763260832,
-        "narHash": "sha256-KMEJ9S7bZLvDIfVu2XdEJTZVYAc/arjFt5KnhGqwCOg=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "c3cea2a0ec0d5debbef4aa2a0cfe59bd0fb0aeeb",
-        "type": "github"
+        "lastModified": 1790407471,
+        "narHash": "sha256-M8elY2UShg4ZuLTiRLEHO+ae5xQFp3/ReQdxp/R+1UU=",
+        "ref": "master",
+        "rev": "4e9bb05a9ab6c37dc74c22974ebed6e36dc73eb2",
+        "shallow": true,
+        "type": "git",
+        "url": "https://github.com/oxalica/rust-overlay"
       },
       "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
+        "ref": "master",
+        "shallow": true,
+        "type": "git",
+        "url": "https://github.com/oxalica/rust-overlay"
       }
     }
   },

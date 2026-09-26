@@ -1,10 +1,6 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-  home.packages = with pkgs; [
-    starship
-  ];
-
   programs.starship = {
     enable = true;
     settings = {
@@ -18,7 +14,6 @@
     enableCompletion = true;
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin"
-      eval "$(starship init bash)"
     '';
   };
 }

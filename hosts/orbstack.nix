@@ -24,12 +24,20 @@
 
   users.mutableUsers = false;
 
+  home-manager.users.sushao =
+    { config, ... }:
+    {
+      home.file."nixos-config".source =
+        config.lib.file.mkOutOfStoreSymlink "/Users/sushao/Documents/code/nixos-flake";
+    };
+
   time.timeZone = "Asia/Shanghai";
 
   networking = {
     dhcpcd.enable = false;
     useDHCP = false;
     useHostResolvConf = false;
+    resolvconf.enable = false;
   };
 
   systemd.network = {
